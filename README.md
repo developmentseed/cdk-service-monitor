@@ -27,7 +27,7 @@ class MyApi(Construct):
 
         # set up your service
 
-        dd = ServiceMonitor(self, f"ServiceMonitor{id}", url=url, metric_name=f"{id}IsDown", publish_on_success=False)
+        ServiceMonitor(self, f"ServiceMonitor{id}", url=url, metric_name=f"{id}IsDown", publish_on_success=False)
 ```
 
 ## Permissions
